@@ -1,0 +1,176 @@
+/*
+       公共部分CSS    
+ */
+
+html,body{width: 100%;height: 100%;}
+header{position: relative; height: 0.88rem;background:#e63569;text-align: center;font:.4rem/.88rem "microsoft yahei";color: #fff;}
+header a:nth-of-type(1){position: absolute; left: 0.2rem; top:0.26rem ;}
+header a:nth-of-type(1) img{width:0.5rem;height: 0.32rem;}
+header a:nth-of-type(2){position: absolute;right: 0.2rem;top:0.14rem; width: 1.10rem; height: 0.56rem;background: linear-gradient(to top,#dd255b,#e66e8a); color:#f0d0d3 ;font: 0.30rem/0.56rem "microsoft yahei";border-top:2px solid #d76587;border-bottom:2px solid #d76587;border-radius: 0.2rem;}
+
+
+footer{display: flex; height: 0.98rem;width: 100%; background:rgb(72,72,80);font-size:0.3rem;color: #fff;}
+footer div{text-align:center;-webkit-flex:1;box-sizing:border-box;padding-top:0.59rem;font-size:0.24rem;border-top:0.05rem solid transparent;}
+footer .active{border-top:0.05rem solid rgb(215,17,16);}
+footer .home{background:url(../img/homeicon.png) no-repeat center 0.05rem;background-size:0.45rem;}
+footer .classify{background:url(../img/classify.png) no-repeat center 0.07rem;background-size:0.45rem;}
+footer .shopcart{background:url(../img/shopcarticon.png) no-repeat center 0.07rem;background-size:0.45rem;}
+footer .myshow{background:url(../img/myshowicon.png) no-repeat center 0.06rem;background-size:0.45rem;}
+footer .more{background:url(../img/moreicon.png) no-repeat center 0.25rem;background-size:0.45rem;}
+
+
+.C_wrapper{width: 100%;height: 100%;display: flex;flex-direction: column;background: #f7f7f7;overflow: hidden;}
+.C_wrapper .wrapper{flex: 1;position: relative;overflow: hidden;width: 100%;font: .3rem/.5rem "microsoft yahei";background: #fcfcfc;}
+.C_wrapper .wrapper li{height:2.21rem;box-sizing: border-box;border-bottom: 1px solid #727272;border-top: 1px solid #aeacad;}
+.C_wrapper .wrapper .product{width: 90%;padding: 0.2rem 7.7% 0 2.3%;}
+.C_wrapper .wrapper .img{float: left; width: 30%;height: 1.74rem;box-sizing: border-box;border: 1px solid #c6c6c6;}
+.C_wrapper .wrapper .img img{width:100%;height: 100%;}
+.C_wrapper .wrapper .details{position: relative; float: left;width: 70%; box-sizing: border-box;padding-left: 0.16rem;font: 0.26rem/0.4rem "microsoft yahei";}
+.C_wrapper .wrapper p{color: #000000;}
+.C_wrapper .wrapper p .price{font-weight: bold;color: #e92f6e;}
+.C_wrapper .wrapper p .price b{margin-left:0.05rem ;}
+.C_wrapper .wrapper p .original-price{margin-left: 0.18rem;font-size: 0.18rem;color: #b0b0b0;text-decoration: line-through;}
+.C_wrapper .wrapper button{position: absolute;top:55% ;right: 2%; width:1.52rem;height: 0.58rem;border-radius:0.1rem;background: url(../img/joincart.png) no-repeat center;background-size: 1.58rem 0.58rem}
+
+
+.C_wrapper .wrapper .inner{width: 87.5%;height: 100%;}
+.C_wrapper .wrapper .my_house{border: 1px solid #dadada;border-radius: 0.2rem;background: #fff;margin-top: 0.82rem;}
+.C_wrapper .wrapper .my_house li {height: 0.88rem;border-color:#dadada ; border-bottom: none;font: 0.34rem/0.88rem "microsoft yahei";color: #000;}
+.C_wrapper .wrapper .my_house li:first-child{border-top: none;}
+.C_wrapper .wrapper .my_house li span{float: left;margin-left: 0.28rem;}
+.C_wrapper .wrapper .my_house li i{float:right;margin-right: 0.26rem; color: #a9a9a9;}
+.C_wrapper .wrapper .btn{display: inline-block;width:1.08rem ;height:0.54rem ;background: linear-gradient( to top,#9c153e,#e12c61,#fb5982); border-radius: 0.1rem;margin-right: 0.4rem; text-align: center;font: 0.24rem/0.54rem "microsoft yahei";color: #fff;}
+
+
+
+
+.C_footer{display: flex;height: 0.98rem; justify-content: center;background:rgb(72,72,80);font: 0.32rem/0.98rem "microsoft yahei";}
+.C_footer div{flex: 1;text-align: center;color: #fff;box-sizing: border-box; border-top:0.05rem solid transparent;border-right:1px solid #292a2c ;}
+.C_footer div:last-child{border-right: none;}
+.C_footer .active{border-top:0.05rem solid #e9346b;}
+
+
+
+
+
+/*register*/
+.Z_register section{flex: 1;}
+.Z_register form{box-sizing: border-box; font: 0.34rem/0.78rem "microsoft yahei";display: flex;justify-content: center;flex-wrap: wrap;padding-top: 0.62rem;}
+.Z_register form p:nth-of-type(3){margin-bottom: 0;}
+.Z_register p{width: 87.5%;height: 0.78rem;margin-bottom: 0.50rem;}
+.Z_register p input{width: 100%;height: 100%;border-radius: 0.2rem ;text-indent: 0.24rem;}
+.Z_register .submit{height: 0.9rem;}
+.Z_register .submit input{height: 0.9rem;margin-top: 0.78rem; color: #fff;background: linear-gradient(to top,#b0043c,#ef6483);}
+
+/* login*/
+.Z_login section{flex: 1;}
+.Z_login form{box-sizing: border-box; font: 0.34rem/0.78rem "microsoft yahei";display: flex;justify-content: center;flex-wrap: wrap;padding-top: 0.62rem;}
+.Z_login p{width: 87.5%;height: 0.78rem;margin-bottom: 0.50rem;}
+.Z_login p:nth-of-type(3){margin-bottom: 0;}
+.Z_login p input{width: 100%;height: 100%;border-radius: 0.2rem ;text-indent: 0.24rem;}
+.Z_login p:nth-of-type(3) input{width: 0.50rem;}
+.Z_login p .forgetpsd{font: 0.28rem/0.3rem "microsoft yahei"; color: #b5b5b5;margin-left:0.48rem;text-decoration: underline;}
+.Z_login .submit{height: 0.9rem;}
+.Z_login .submit input{height: 0.9rem;margin-top: 0.78rem; color: #fff;background: linear-gradient(to top,#b0043c,#ef6483);}
+
+/* index*/
+.Z_main .search{width: 100%;height: .88rem;background:#515254;display: flex;justify-content: center;border-bottom: 1px solid #242716;border-bottom: 1px solid #242716;border-top: 1px solid #242716;}
+.Z_main input{width:92%;height:.56rem;box-sizing: border-box; align-self: center;border-radius:.2rem ;text-indent: .76rem; font: .24rem/.56rem "microsoft yahei";background:#fff url(../img/search.png) no-repeat 0.25rem center;background-size:0.36rem; }
+.Z_main .banner{height: 2.5rem;font-size: .4rem;color: #fff;width: 100%;border-bottom: 1px solid #615a61;border-top: 1px solid #615a61;}
+
+/*Z_show  我的秀*/
+.Z_show .wrapper{display: flex;justify-content: center;}
+.Z_show .wrapper .myinfo{height: 1.64rem;margin-top: 0.62rem;}
+.Z_show .wrapper .portrait{float: left;} 
+.Z_show .wrapper .portrait img{width: 1.65rem;} 
+.Z_show .wrapper .info{float: left;}
+.Z_show .wrapper .info{margin-left: 0.33rem;}
+.Z_show .wrapper .info p{font: 0.36rem/1rem "microsoft yahei";color: #1f1f1f; }
+
+
+
+/*Z_more  更多*/
+.Z_more .wrapper{display: flex;justify-content: center;}
+.Z_more .wrapper .my_house:first-child{margin:0.4rem 0 0.25rem 0 ;}
+.Z_more .wrapper .my_house:nth-of-type(2){margin: 0;}
+.Z_more .wrapper .btn{width: 100%;height: 0.9rem;margin-top: 0.21rem;margin-right:0;line-height: 0.9rem;font-size: 0.34rem;}
+
+
+/*Z_details 商品详情*/
+.Z_details .list{float: left; height: 100%;width: 100%;display: none;}
+.Z_details .swiper-slide img{width: 100%;height: 100%;}
+.Z_details .banner{height: 100%;}
+.Z_details .swiper-pagination-bullet{width:0.22rem ;height:0.22rem ;border-radius:50% ;background: #fff;}
+.Z_details .swiper-pagination-bullet-active{background: #d84b6e;}
+.Z_details .product_detail{position: relative;overflow: hidden;width: 100%; background: #f7f7f7;}
+.Z_details .product_detail .brand{width: 100%;}
+.Z_details .product_detail .brand img{width: 100%;height: 100%;}
+.Z_details .product_detail p{width:5.66rem;margin:0.1rem 0 0.2rem 0.2rem; font: 0.26rem/0.38rem "microsoft yahei";color: #727272;}
+.Z_details .recommend{background: #f7f7f7;width: 100%;}
+.Z_details .recommend .rec-t{height:5.35rem ;display: flex;justify-content: center;}
+.Z_details .recommend .imgbox{ width: 4.37rem;height: 3.66rem;border: 1px solid #acacac;margin-top: 1.19rem;}
+.Z_details .recommend .imgbox img{width: 100%; height: 100%;}
+.Z_details .recommend .details_title{}
+.Z_details .recommend .details_title p{position: relative; margin: 0 auto; width: 4.64rem;height: 0.84rem; font:0.36rem/0.84rem "microsoft yahei";color: #fff; text-indent: 0.4rem; background: linear-gradient(to top, #d6104d,#ef2863,#fa5f87);}
+.Z_details .recommend .details_title p:after{content: ''; width: 0.22rem;height: 0.22rem;border-radius: 50%;background: #fff;position: absolute;left: -0.1rem;top: 0.3rem;}
+.Z_details .recommend .details_title .current_price{margin:0 0.20rem 0 0.02rem;}
+.Z_details .recommend .market{height: 0.88rem;font: 0.24rem/0.88rem "microsoft yahei";}
+.Z_details .recommend .market p{width:75%;display: flex;justify-content: space-around;margin-left: 0.62rem;}
+.Z_details .recommend .market span{color: #3b3b3b;}
+.Z_details .recommend .market span:nth-of-type(1){flex: 0 0 40%}
+.Z_details .recommend .market span:nth-of-type(1) em{text-decoration: line-through;}
+.Z_details .recommend .market span:nth-of-type(2){flex: 0 0 34%;text-align: left;}
+.Z_details .recommend .market span:nth-of-type(3){flex: 1;}
+.Z_details .recommend .notice{height:0.88rem ;width:100%; position:absolute ;top: 0; left: 0;background:#333333 ;color: #fff;font: 0.28rem/0.88rem"microsoft yahei";text-indent: 0.22rem;} 
+.Z_details .recommend .details_title p:before{content: '';width: 0;height: 0;position: absolute;left: -0.82rem;border-color:transparent #fa306c transparent  transparent;border-width:0.42rem;border-style: solid;}
+
+
+
+/*.Z_emptycart  空购物车*/
+.Z_emptycart .wrapper p {text-align: center;font: 0.36rem/0.86rem "microsoft yahei";margin-top: 0.40rem;}	
+.Z_emptycart .wrapper .empty{height: 2.62rem;text-align: center;}
+.Z_emptycart .wrapper .empty img{height:2.62rem;margin: 0 auto;}
+.Z_emptycart .wrapper .gogo{display: block;color: #fff;text-align: center;border-radius: 0.05rem; font:500 0.48rem/0.93rem "microsoft yahei"; width: 75%;height: 0.93rem;background: linear-gradient( to top,#be013b,#e12b64,#ee6889);margin: 0.70rem auto 0;}
+
+
+
+/*Z_mycart  我的购物车*/
+.Z_mycart .wrapper .details .over{width: 60%;-webkit-line-clamp: 1;}
+.Z_mycart .wrapper .delete{position: absolute;top:0.1rem ;right:10%; width:0.27rem;height: 0.32rem;background: url(../img/delete.png) no-repeat center;background-size: 0.27rem;}
+.Z_mycart .wrapper .size{position: absolute;top:0.9rem ;right:10%;font-weight: 600;}
+.Z_mycart .wrapper .count a{display: inline-block;width: 0.6rem;height: 0.42rem;color: #fff; font:700 0.30rem/0.42rem "microsoft yahei";background: linear-gradient(to top,#4e4e4e,#acacac);text-align:center;border-radius: 0.12rem;}
+.Z_mycart .wrapper .count #num{width:0.78rem;height: 0.42rem;margin: 0 0.14rem;border-radius: 0.08rem;text-align: center;}
+.Z_mycart .total{position:fixed;top:0.88rem;height:0.88rem ;width:100%;z-index:99999;background:#333333 ;color: #fff;font: 0.28rem/0.88rem"microsoft yahei";text-indent: 0.22rem;}
+.Z_mycart .total .total_price{float: right;margin-right:2% ;}
+.Z_mycart .total .total_price b{color: #d43868;font-weight: normal;}
+.Z_mycart .wrapper{padding-top: 0.88rem;}
+.Z_mycart footer .shopcart{position: relative;}
+.Z_mycart footer .shopcart .ProductNum{position: absolute;top: -0.03rem ;right:0.25rem ;   width: 0.30rem;height: 0.30rem;border-radius: 50%;background: #d63e67;color: #fff;text-align: center;line-height: 0.30rem;}
+
+
+
+/*Z_view browsing history 浏览历史*/
+.Z_view .wrapper li{height:2.32rem;}
+.Z_view .wrapper .details{padding-left: 0.28rem;font: 0.28rem/0.4rem "microsoft yahei";}
+.Z_view .wrapper p .price{padding-left:0.2rem ;}
+
+/*.Z_favorite我的收藏*/
+.Z_favorite .wrapper .delete{position: absolute;top:0 ;right:-0.22rem; width:0.27rem;height: 0.32rem;background: url(../img/delete.png) no-repeat center;background-size: 0.27rem;}
+
+
+
+
+/* Z_order 我的订单 */
+.Z_myorder .wrapper .size{position: absolute;top:0 ;right:-0.22rem;font-weight: 600;}
+.Z_myorder .wrapper .num{margin-left: 0.14rem;}
+
+
+/*Z_coupons 我的优惠券*/
+.Z_coupons .wrapper ul{font: 0.28rem/0.64rem "microsoft yahei";display: flex;width:81.25%;margin: 0.32rem auto 0;border: 1px solid #adadad;border-bottom: none;}
+.Z_coupons .wrapper ul li{background:linear-gradient(to top,#c4c4c4,#f4f4f4) ; height: 0.64rem;text-align: center;color: #000;width: 25%; border-top: none;border-bottom: none;border-right: 1px solid #ababab;}
+.Z_coupons .wrapper ul li:last-child{border-right: none;}
+.Z_coupons .wrapper ul .active{background:linear-gradient(to top,#d5114f,#d5114f);color: #fff;}
+.Z_coupons .wrapper .couponsbox{width: 81.25%;margin: 0.28rem auto 0; }
+.Z_coupons .wrapper .couponsbox .tab{border: 1px solid #a2a2a2;width: 100%;height: 1.42rem;border-radius:0.05rem ;}
+.Z_coupons .couponsbox .tab p{font: 0.24rem/0.36rem "microsoft yahei";color: #404040;text-indent: 0.14rem;}
+.Z_coupons .couponsbox .tab p span{color: #919191;}

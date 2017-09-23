@@ -1,0 +1,109 @@
+{
+	"register.html": {
+		"resources": [
+			"img/homeicon.png",
+			"img/myshowicon.png",
+			"img/black.png",
+			"img/moreicon.png",
+			"img/shopcarticon.png",
+			"img/classify.png",
+			"index.html",
+			"js/register.js",
+			"login.html",
+			"css/bin/mobilereset.css",
+			"css/page.css",
+			"js/bin/zepto.min.js"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"img/homeicon.png",
+			"img/myshowicon.png",
+			"js/bin/swiper-3.3.1.min.js",
+			"img/moreicon.png",
+			"css/page.css",
+			"img/shopcarticon.png",
+			"js/bin/iscroll-min.js",
+			"img/search.png",
+			"css/bin/mobilereset.css",
+			"js/bin/zepto.min.js",
+			"img/classify.png",
+			"js/index.js",
+			"css/bin/swiper-3.3.1.min.css",
+			"more.html",
+			"myshow.html",
+			"mycart.html"
+		],
+		"refer": [
+			"more.html",
+			"mycart.html",
+			"myshow.html"
+		]
+	},
+	"myshow.html": {
+		"resources": [
+			"register.html",
+			"img/head_photo.png",
+			"more.html",
+			"login.html",
+			"js/myshow.js",
+			"mycart.html",
+			"img/black.png"
+		],
+		"refer": [
+			"register.html",
+			"more.html",
+			"login.html",
+			"mycart.html"
+		]
+	},
+	"more.html": {
+		"resources": [
+			"myshow.html",
+			"js/more.js",
+			"img/black.png",
+			"mycart.html"
+		],
+		"refer": [
+			"myshow.html",
+			"mycart.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"myshow.html",
+			"js/login.js",
+			"index.html",
+			"register.html",
+			"img/homeicon.png",
+			"img/myshowicon.png",
+			"img/black.png",
+			"css/bin/mobilereset.css",
+			"img/moreicon.png",
+			"img/shopcarticon.png",
+			"css/page.css",
+			"js/bin/zepto.min.js",
+			"img/classify.png"
+		],
+		"refer": [
+			"myshow.html",
+			"index.html",
+			"register.html"
+		]
+	},
+	"mycart.html": {
+		"resources": [
+			"index.html",
+			"js/mycart.js",
+			"img/black.png",
+			"myshow.html"
+		],
+		"refer": [
+			"index.html",
+			"myshow.html"
+		]
+	}
+}

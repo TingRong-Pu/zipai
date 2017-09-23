@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>开机动画 </title>
+		<link rel="stylesheet" type="text/css" href="css/bin/swiper-3.3.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bin/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bin/mobilereset.css"/>
+		<style type="text/css">
+			 .Z-first{width: 100%;height: 100%;background: #f3f3f5;overflow: hidden;}
+			 .Z-first .swiper-container{width: 100%;height: 100%;}
+			 .Z-first .swiper-slide{position: relative;}
+			 .Z-first .swiper-slide img{position: absolute;}
+			 .Z-first .index1 img:nth-of-type(1){top: 0; left: 0; width:100%;}
+			 .Z-first .index1 img:nth-of-type(2){top: 60%; left: 0; width:100%;}
+			 
+			 .Z-first .index2 img:nth-of-type(1){top: 0.1rem; left: 1.88rem;width: 2.6rem; }
+			 .Z-first .index2 img:nth-of-type(2){top: 31%; left: 1.88rem; width: 2.6rem;}
+			 .Z-first .index2 img:nth-of-type(3){top: 63%; left: 0.75rem; width:4.2rem;}
+			 
+			 .Z-first .index3 img:nth-of-type(1){top: 1.1rem; left: 0;width:100%; }
+			 .Z-first .index3 img:nth-of-type(2){top: 60%; left: 1.55rem; width:3.1rem;}
+
+			 .Z-first .index4 img:nth-of-type(1){top: 1.4rem; left:0;width:100%; }
+			 .Z-first .index4 img:nth-of-type(2){top: 35%; left: 0; width:100%;}
+			 .Z-first .index4 img:nth-of-type(3){top: 74%; left:25%; width:2.92rem;}
+		</style>
+	</head>
+	<body>
+		<div class="Z-first">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide index1">	
+						<img src="img/start/1.1.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+						<img src="img/start/1.2.png"  class="ani" swiper-animate-effect='swing' swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+					</div>
+					<div class="swiper-slide index2">
+						<img src="img/start/2.1.png" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration='1s' swiper-animate-delay='0.5s'/>
+						<img src="img/start/2.2.png" class="ani" swiper-animate-effect="bounce" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+						<img src="img/start/2.3.png" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+					</div>
+					<div class="swiper-slide index3">
+						<img src="img/start/3.1.png" class="ani" swiper-animate-effect="shake" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+						<img src="img/start/3.2.png" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+					</div>
+					<div class="swiper-slide index4">
+						<img src="img/start/4.1.png" class="ani" swiper-animate-effect="tada" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+						<img src="img/start/4.2.png" class="ani" swiper-animate-effect="rollIn" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+						<img src="img/start/4.3.png" onclick="location.href='index.html'"  class="ani"  swiper-animate-effect="swing" swiper-animate-duration='1s' swiper-animate-delay='0s'/>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/bin/swiper-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/bin/swiper.animate.min.js" ></script>
+		<script type="text/javascript" src="js/bin/zepto.min.js" ></script>
+		<script type="text/javascript">
+			var swiper = new Swiper(".swiper-container",{
+//				autoplay:1000,
+				pagination:".swiper-pagination",
+				onInit:function(swiper){
+					swiperAnimateCache(swiper)
+					swiperAnimate(swiper)
+				},
+				onSlideChangeEnd:function(swiper){
+					swiperAnimate(swiper)
+				}
+			})
+			
+			initSize();
+			function initSize(){
+				let screenW = window.screen.width;
+				let oHtml = $("html");
+				return	oHtml.css("fontSize",100*screenW/640 + "px");
+			}
+		</script>
+	</body>
+</html>

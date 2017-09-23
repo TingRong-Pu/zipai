@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Keywords" content=""/>
+		<meta name="" content=""/>
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/bin/mobilereset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+	</head>
+	<body>
+		<div class="Z_register C_wrapper">
+			<header>
+				<a onclick="goBack()" class="black"><img src="img/black.png"/></a>
+				<b>注册</b>
+				<a href="login.html">登录</a>
+			</header>
+			<section>
+				<form>
+					<p><input type="text" name="username" placeholder="账号" id="username"/></p>
+					<p><input type="password" name="password" placeholder="密码" id="password"/></p>
+					<p><input type="password" name="repassword" placeholder="重复密码" id="repassword"/></p>
+					<p class="submit"><input type="button" value="同意服务协议并注册" onclick="_register()"/></p>
+				</form>
+			</section>
+			<footer>
+				<div class="home" onclick="location.href='index.html'"><p>首页</p></div>
+				<div class="classify"><p>分类</p></div>
+				<div class="shopcart" onclick="location.href='mycart.html'"><p>购物车</p></div>
+				<div class="myshow"onclick="location.href='myshow.html'"><p>我的秀</p></div>
+				<div class="more" onclick="location.href='more.html'"><p>更多</p>
+			</footer>
+		</div>
+	</body>	
+	<script type="text/javascript" src="js/bin/zepto.min.js" ></script>
+	<script type="text/javascript" src="js/register.js" ></script>
+</html>

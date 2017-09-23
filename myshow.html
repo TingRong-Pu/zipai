@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Keywords" content=""/>
+		<meta name="" content=""/>
+		<title>我的秀</title>
+		<link rel="stylesheet" type="text/css" href="css/bin/mobilereset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+	</head>
+	<body>
+		<div class="Z_show C_wrapper">
+			<header>我的秀<a onclick="goBack()" class="black"><img src="img/black.png"/></a></header>
+			<div class="wrapper " id="wrapper">
+				<div class="inner">
+					
+					<div class="myinfo">
+						<div class="portrait">
+							<img src="img/head_photo.png"/>
+						</div>
+						<div class="info">
+							<p>昵称：<span id="username">-_-</span></p>
+								<a class="btn" onclick="location.href='login.html'">登录</a>
+								<a class="btn" onclick="location.href='register.html'">注册</a>
+						</div>
+					</div>
+					
+					
+					<ul class="my_house">
+						<li onclick="location.href='myorder.html'"><span>我的订单</span><i>></i></li>
+						<li onclick="location.href='mycoupons.html'"><span>我的优惠券</span><i>></i></li>
+						<li onclick="location.href='viewhistory.html'"><span>浏览记录</span><i>></i></li>
+						<li onclick="location.href='myfavorite.html'"><span>我的收藏</span><i>></i></li>
+						<li onclick="location.href='firstblood.html'"><span>开机动画</span><i>></i></li>
+					</ul>
+					
+					
+					
+				</div>
+			</div>
+			<footer>
+				<div class="home" onclick="location.href='index.html'"><p>首页</p></div>
+				<div class="classify" ><p>分类</p></div>
+				<div class="shopcart" onclick="location.href='mycart.html'"><p>购物车</p></div>
+				<div class="myshow active" onclick="location.href='myshow.html'"><p>我的秀</p></div>
+				<div class="more" onclick="location.href='more.html'"><p>更多</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/bin/iscroll-min.js" ></script>
+	<script type="text/javascript" src="js/bin/zepto.min.js" ></script>
+	<script type="text/javascript" src="js/myshow.js" ></script>
+</html>
